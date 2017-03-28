@@ -1,5 +1,7 @@
-require 'twitter'
+require 'rubygems'
+require 'bundler/setup'
 require 'dotenv/load'
+require 'twitter'
 
 # Make sure you do `cp example.env .env` and create a Twitter API account
 # and add the appropriate keys to the file `.env`.
