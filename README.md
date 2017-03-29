@@ -9,7 +9,7 @@ Assuming you have a *nix system, and you have `ruby`, `rubygems`, `bundler` and 
 ## Twitter API keys
 
 Go to [https://apps.twitter.com/](https://apps.twitter.com/) to get yer API keys.
-Place them in a file called `.env` which you will copy from `env.example` by using the following command:
+Place them in a file called `.env` which you will copy from `example.env` by using the following command:
 
 ```sh
 cp example.env .env
