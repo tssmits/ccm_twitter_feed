@@ -6,7 +6,7 @@ For the [Creative Coding Maastricht Meetup](https://www.meetup.com/Creative-Codi
 
 Assuming you have a *nix system, and you have `ruby`, `rubygems`, `bundler` and `rbenv` installed. Then, clone this repository and run `bundle install`. Now that the dependencies are taken care of, you can start the script by running `bundle exec ruby twitter_hashtag_monitor.rb`. Enjoy the stream! YMMV.
 
-## Twitter API keys
+### Twitter API keys
 
 Go to [https://apps.twitter.com/](https://apps.twitter.com/) to get yer API keys.
 Place them in a file called `.env` which you will copy from `example.env` by using the following command:
@@ -15,7 +15,8 @@ Place them in a file called `.env` which you will copy from `example.env` by usi
 cp example.env .env
 ```
 
-## Customization
+## Usage 
+### twitter_hashtag_monitor.rb
 
 In the file `twitter_hashtag_monitor.rb` you can set the filters you'd like in the `topics` variable, like so:
 
@@ -38,6 +39,25 @@ end
 ```
 
 More documentation available in the [twitter gem](https://github.com/sferik/twitter) that powers the script.
+
+Then run the following to execute script:
+
+```sh
+bundle exec twitter_hashtag_monitor.rb
+```
+
+### one_twitter_message.rb
+
+Use this to print a limited number of twitter messages to `stdout`.
+
+```sh
+# Outputs 1 twitter message
+bundle exec one_twitter_message.rb
+
+# Outputs 123 twitter message
+bundle exec one_twitter_message.rb 123
+
+```
 
 ## Thanks
 
